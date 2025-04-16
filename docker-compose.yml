@@ -1,0 +1,51 @@
+version: '3'
+
+services:
+  php:
+    build: 
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: b24-otus-php
+    volumes:
+      - ./php:/var/www/html
+    networks:
+      - b24-network
+
+  nginx:
+    image: nginx:alpine
+    container_name: b24-otus-nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./php:/var/www/html
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - php
+    networks:
+      - b24-network
+
+  mysql:
+    image: mysql:5.7
+    container_name: b24-otus-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bitrix
+      MYSQL_USER: bitrix
+      MYSQL_PASSWORD: bitrix
+      MYSQL_INITDB_SKIP_TZINFO: 1
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/custom.cnf
+    ports:
+      - "3306:3306"
+    networks:
+      - b24-network
+    restart: unless-stopped
+
+networks:
+  b24-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
+    driver: local 
