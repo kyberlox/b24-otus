@@ -1,0 +1,77 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: ./nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./data/bitrix:/var/www/bitrix
+      - ./logs/nginx:/var/log/nginx
+    depends_on:
+      - php
+      - mysql
+    networks:
+      - bitrix-network
+
+  php:
+    build: ./php-fpm
+    volumes:
+      - ./data/bitrix:/var/www/bitrix
+      - ./logs/php:/var/log/php
+      - ./logs/supervisor:/var/log/supervisor
+    environment:
+      - MYSQL_HOST=mysql
+      - MYSQL_USER=${user}
+      - MYSQL_PASSWORD=${pswd}
+      - MYSQL_DATABASE=bitrix
+      - REDIS_HOST=redis
+    depends_on:
+      - mysql
+      - redis
+    networks:
+      - bitrix-network
+
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./logs/mysql:/var/log/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=rootpassword
+      - MYSQL_USER=${user}
+      - MYSQL_PASSWORD=${pswd}
+      - MYSQL_DATABASE=bitrix
+    ports:
+      - "3306:3306"
+    networks:
+      - bitrix-network
+
+  redis:
+    image: redis:6.2-alpine
+    volumes:
+      - ./data/redis:/data
+    ports:
+      - "6379:6379"
+    networks:
+      - bitrix-network
+
+  node:
+    image: node:16
+    volumes:
+      - ./data/bitrix:/var/www/bitrix
+    working_dir: /var/www/bitrix
+    command: tail -f /dev/null  # Просто держим контейнер запущенным
+    networks:
+      - bitrix-network
+
+networks:
+  bitrix-network:
+    driver: bridge
+
+volumes:
+  mysql-data:
+  redis-data:
+  bitrix-data:

@@ -2,5 +2,5 @@
 git status
 git add .
 git status
-git commit -m "test config"
+git commit -m "Базовая структура проекта"
 git push origin main
