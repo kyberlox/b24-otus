@@ -10,9 +10,6 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     libzip-dev \
-    libssl-dev \
-    zlib1g-dev \
-    libldap2-dev \
     zip \
     unzip \
     supervisor \
@@ -20,10 +17,8 @@ RUN apt-get update && apt-get install -y \
     gnupg \
     wget \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-configure ldap --with-libdir=lib/x86_64-linux-gnu/ \
     && docker-php-ext-install -j$(nproc) \
         pdo_mysql \
-        mysqli \
         mbstring \
         exif \
         pcntl \
@@ -31,8 +26,6 @@ RUN apt-get update && apt-get install -y \
         gd \
         sockets \
         zip \
-        opcache \
-        ldap \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && apt-get clean \
@@ -53,7 +46,7 @@ COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 # Настройка прав
 RUN chown -R www-data:www-data /var/www/bitrix \
-    && chmod -R 755 /var/www/bitrix
+    && chmod -R 777 /var/www/bitrix
 
 # Настройка cron для Bitrix
 RUN echo "* * * * * www-data /usr/local/bin/php /var/www/bitrix/bitrix/modules/main/tools/cron_events.php" >> /etc/crontab
