@@ -55,6 +55,8 @@ WORKDIR /var/www/bitrix
 
 CMD ["supervisord", "-n"]FROM php:8.2-fpm
 
+FROM php:8.2-fpm
+
 # Установка системных зависимостей
 RUN apt-get update && apt-get install -y \
     git \
@@ -65,6 +67,7 @@ RUN apt-get update && apt-get install -y \
     libonig-dev \
     libxml2-dev \
     libzip-dev \
+    libssl-dev \
     zip \
     unzip \
     supervisor \
@@ -74,6 +77,7 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gd --with-freetype --with-jpeg \
     && docker-php-ext-install -j$(nproc) \
         pdo_mysql \
+        mysqli \
         mbstring \
         exif \
         pcntl \
@@ -81,10 +85,15 @@ RUN apt-get update && apt-get install -y \
         gd \
         sockets \
         zip \
+        opcache \
     && pecl install redis \
     && docker-php-ext-enable redis \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+# Дополнительные настройки для MySQL
+RUN docker-php-ext-configure pdo_mysql --with-zlib-dir=/usr \
+    && docker-php-ext-configure mysqli --with-zlib-dir=/usr
 
 # Установка Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
