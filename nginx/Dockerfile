@@ -1,5 +1,6 @@
 # Основной вариант (с повтором при ошибке)
-FROM nginx:1.23-alpine
+ARG NGINX_VERSION=1.23-alpine
+FROM nginx:${NGINX_VERSION}
 
 # Альтернативные варианты (раскомментируйте при ошибке):
 # FROM ghcr.io/nginx:1.23-alpine
