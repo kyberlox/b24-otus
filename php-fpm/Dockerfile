@@ -1,4 +1,4 @@
-FROM php:8.2.8-fpm-bookworm
+FROM php:8.2.8-fpm
 
 # Установка системных зависимостей
 RUN apt-get update && apt-get install -y \
