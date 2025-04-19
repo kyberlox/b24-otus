@@ -11,6 +11,7 @@ RUN apt-get update && apt-get install -y \
     libxml2-dev \
     libzip-dev \
     libssl-dev \
+    zlib1g-dev \
     zip \
     unzip \
     supervisor \
@@ -34,10 +35,6 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Дополнительные настройки для MySQL
-RUN docker-php-ext-configure pdo_mysql --with-zlib-dir=/usr \
-    && docker-php-ext-configure mysqli --with-zlib-dir=/usr
-
 # Установка Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
@@ -53,7 +50,7 @@ COPY supervisor.conf /etc/supervisor/conf.d/supervisor.conf
 
 # Настройка прав
 RUN chown -R www-data:www-data /var/www/bitrix \
-    && chmod -R 755 /var/www/bitrix
+    && chmod -R 777 /var/www/bitrix
 
 # Настройка cron для Bitrix
 RUN echo "* * * * * www-data /usr/local/bin/php /var/www/bitrix/bitrix/modules/main/tools/cron_events.php" >> /etc/crontab
