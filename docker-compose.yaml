@@ -24,6 +24,7 @@ services:
       - ./logs/php:/var/log/php
       - ./logs/supervisor:/var/log/supervisor
     environment:
+      - BITRIX_VA_VER=9.0.0
       - MYSQL_HOST=mysql
       - MYSQL_USER=${user}
       - MYSQL_PASSWORD=${pswd}
