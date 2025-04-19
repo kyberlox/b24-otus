@@ -2,9 +2,11 @@ version: '3.8'
 
 services:
   nginx:
-    build: ./nginx
-    args:
-      NGINX_VERSION: 1.25-alpin
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+      args:  # Переносим args в правильную секцию
+        NGINX_VERSION: 1.25-alpine
     ports:
       - "80:80"
       - "443:443"
