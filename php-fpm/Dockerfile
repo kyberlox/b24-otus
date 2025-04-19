@@ -1,4 +1,20 @@
-FROM php:8.2-fpm
+FROM php:8.2-fpm-alpine
+
+RUN apt-get update && apt-get install -y \
+    git curl libpng-dev libjpeg-dev \
+    libfreetype6-dev libonig-dev libxml2-dev \
+    libzip-dev zip unzip supervisor \
+    cron gnupg wget
+
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg
+
+RUN docker-php-ext-install -j$(nproc) \
+    pdo_mysql mbstring exif pcntl \
+    bcmath gd sockets zip
+
+RUN pecl install redis && docker-php-ext-enable redis
+
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Установка системных зависимостей
 RUN apt-get update && apt-get install -y \
@@ -33,6 +49,15 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-enable redis \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
+
+RUN set -eux; \
+    apt-get update || apt-get update; \
+    apt-get install -y \
+        git curl libpng-dev libjpeg-dev \
+        libfreetype6-dev libonig-dev libxml2-dev \
+        libzip-dev zip unzip supervisor \
+        cron gnupg wget ca-certificates \
+    || (apt-get clean && apt-get update && apt-get install -y ...)
 
 # Дополнительные настройки для MySQL
 RUN docker-php-ext-configure pdo_mysql --with-zlib-dir=/usr \
