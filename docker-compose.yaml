@@ -8,6 +8,7 @@ services:
       - "80:80"
       - "443:443"
     volumes:
+      - ./nginx/:/etc/nginx/conf.d/
       - ./data/bitrix:/var/www/bitrix
       - ./logs/nginx:/var/log/nginx
     depends_on:
