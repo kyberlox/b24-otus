@@ -1,4 +1,6 @@
 #Особенности сборки
+/data/mysql/*
+/data/redis/*
 /mysql/my.cnf
 /logs/*
 
@@ -7,7 +9,8 @@
 .env
 
 #Bitrix
-/data/*
+/data/bitrix/bitrix/*
+/data/bitrix/upload/*
 !/data/bitrix/.settings.php
 !/data/bitrix/bitrix/templates
 !/data/bitrix/bitrix/components
