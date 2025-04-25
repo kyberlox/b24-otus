@@ -1,7 +1,14 @@
-/src/upload/
-/src/bitrix/backup/
-/src/bitrix/managed_cache/
-/src/bitrix/cache/
-/src/bitrix/stack_cache/
-docker/mysql/my.cnf
+#Особенности сборки
+/mysql/my.cnf
+/logs/*
+
+#Системные файлы
+.idea
 .env
+
+#Bitrix
+/data/*
+!/data/bitrix/.settings.php
+!/data/bitrix/bitrix/templates
+!/data/bitrix/bitrix/components
+/data/bitrix/bitrix/components/bitrix/
