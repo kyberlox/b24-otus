@@ -1,0 +1,7 @@
+/src/upload/
+/src/bitrix/backup/
+/src/bitrix/managed_cache/
+/src/bitrix/cache/
+/src/bitrix/stack_cache/
+docker/mysql/my.cnf
+.env
