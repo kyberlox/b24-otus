@@ -7,6 +7,31 @@
 #Системные файлы
 .idea
 .env
+.aws
+.azure
+.bash_history
+.bash_logout
+.bashrc
+.cache/
+.codeium/
+.config/
+.cursor-server/
+.docker/
+.dotnet/
+.gitconfig
+.gnupg/
+.kube/
+.landscape/
+.lesshst
+.local/
+.motd_shown
+.npm/
+.profile
+.pycharm_helpers/
+.ssh/
+.sudo_as_admin_successful
+.vscode-remote-containers/
+.vscode-server/
 
 #Bitrix
 /data/bitrix/bitrix/*
