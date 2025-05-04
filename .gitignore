@@ -1,20 +1,23 @@
 #Особенности сборки
+/data/mysql/*
+/data/redis/*
 /mysql/my.cnf
 /logs/*
 
 #Системные файлы
-.idea
 .env
 
 #Bitrix
-/data/*
+/data/bitrix/bitrix/*
+/data/bitrix/upload/*
+!/data/bitrix/.settings.php
 !/data/bitrix/bitrix/templates
 !/data/bitrix/bitrix/components
 /data/bitrix/bitrix/components/bitrix/
 
 #Домашка
-!/data/bitrix/debag.php
-!/data/bitrix/sql-log.php
+/data/bitrix/debag.php
+/data/bitrix/sql-log.php
 
-!/data/bitrix/.settings.php
-!/data/bitrix/local
+/data/bitrix/.settings.php
+/data/bitrix/local/*

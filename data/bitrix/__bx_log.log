@@ -1,0 +1,11 @@
+b24-logs.log:
+object(DateTime)#216 (3) {
+  ["date"]=>
+  string(26) "2025-05-04 22:38:57.122959"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
