@@ -16,8 +16,8 @@
 /data/bitrix/bitrix/components/bitrix/
 
 #Домашка
-/data/bitrix/debag.php
-/data/bitrix/sql-log.php
+!/data/bitrix/debag.php
+!/data/bitrix/sql-log.php
 
-/data/bitrix/.settings.php
-/data/bitrix/local/*
+!/data/bitrix/.settings.php
+!/data/bitrix/local/*
