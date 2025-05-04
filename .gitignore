@@ -8,7 +8,13 @@
 
 #Bitrix
 /data/*
-!/data/bitrix/.settings.php
 !/data/bitrix/bitrix/templates
 !/data/bitrix/bitrix/components
 /data/bitrix/bitrix/components/bitrix/
+
+#Домашка
+!/data/bitrix/debag.php
+!/data/bitrix/sql-log.php
+
+!/data/bitrix/.settings.php
+!/data/bitrix/local
