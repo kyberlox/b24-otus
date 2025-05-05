@@ -21,8 +21,7 @@ services:
     container_name: php
     volumes:
       - ./data/bitrix/:/var/www/bitrix/
-      - ./logs/php:/var/log/php
-      - ./logs/supervisor:/var/log/supervisor
+      - ./logs/php:/var/www/bitrix/logs/
       - ./data/redis/tmp/sessions:/tmp/sessions
     environment:
       - MYSQL_HOST=mysql

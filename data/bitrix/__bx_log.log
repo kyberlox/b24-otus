@@ -9,3 +9,14 @@ object(DateTime)#216 (3) {
 }
 
 
+b24-logs.log:
+object(DateTime)#339 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 05:41:56.570338"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+

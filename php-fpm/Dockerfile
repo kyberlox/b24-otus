@@ -53,17 +53,17 @@ WORKDIR /var/www/bitrix
 # Создаем группу www и добавляем в нее пользователя www-data
 RUN groupadd -g 1000 www && \
     usermod -a -G www www-data && \
-    chown -R www-data:www /var/www/html && \
-    chmod -R 777 /var/www/html
+    chown -R www-data:www /var/www && \
+    chmod -R 777 /var/www
 
 # Настройка прав для Bitrix
-RUN mkdir -p /var/www/html/upload && \
-    mkdir -p /var/www/html/bitrix/backup && \
-    mkdir -p /var/www/html/bitrix/cache && \
-    mkdir -p /var/www/html/bitrix/managed_cache && \
-    mkdir -p /var/www/html/bitrix/stack_cache && \
-    mkdir -p /var/www/html/bitrix/html_pages && \
-    mkdir -p /var/www/html/bitrix/tmp && \
+RUN mkdir -p /var/www/upload && \
+    mkdir -p /var/www/bitrix/backup && \
+    mkdir -p /var/www/bitrix/cache && \
+    mkdir -p /var/www/managed_cache && \
+    mkdir -p /var/www/bitrix/stack_cache && \
+    mkdir -p /var/www/bitrix/html_pages && \
+    mkdir -p /var/www/bitrix/tmp && \
     chown -R www-data:www /var/www/html && \
     chmod -R 777 /var/www/html
 
