@@ -1,7 +1,9 @@
+
+
 b24-logs.log:
 object(DateTime)#216 (3) {
   ["date"]=>
-  string(26) "2025-05-04 22:38:57.122959"
+  string(26) "2025-05-05 11:33:03.023917"
   ["timezone_type"]=>
   int(3)
   ["timezone"]=>
@@ -10,9 +12,614 @@ object(DateTime)#216 (3) {
 
 
 b24-logs.log:
-object(DateTime)#339 (3) {
+object(DateTime)#216 (3) {
   ["date"]=>
-  string(26) "2025-05-05 05:41:56.570338"
+  string(26) "2025-05-05 11:34:51.010922"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 11:41:17.937769"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:22:12.263206"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:23:23.118143"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:23:42.775202"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:24:13.337449"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:25:28.707756"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:27:15.992904"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:29:23.337700"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:30:00.298108"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:30:45.494412"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:32:21.324728"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:33:09.108201"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:33:49.224415"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:35:01.383035"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:35:20.002943"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:35:30.807494"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:35:43.740762"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:36:12.393398"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:36:39.804449"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:39:59.573196"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:42:11.825412"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:44:45.073708"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:45:35.256235"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:47:04.919476"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:47:33.308631"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:48:40.440892"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:49:42.834609"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:50:00.611493"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:52:37.432767"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#340 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 12:58:04.628642"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#357 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:03:10.125700"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:03:41.956106"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:03:49.576323"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:05:42.924680"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:07:53.968991"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:08:08.543290"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:08:51.201614"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:09:07.777755"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#357 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:10:38.892296"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:10:53.815890"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:11:21.708342"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:12:24.918233"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:13:30.927397"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:13:39.587153"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:14:28.915396"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:15:23.521495"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:17:18.100140"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:18:12.774188"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:19:45.850301"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:20:48.362187"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:21:17.048524"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:21:42.146529"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:23:37.031973"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:25:02.601125"
+  ["timezone_type"]=>
+  int(3)
+  ["timezone"]=>
+  string(3) "UTC"
+}
+
+
+b24-otus-logs.log:
+object(DateTime)#338 (3) {
+  ["date"]=>
+  string(26) "2025-05-05 13:28:31.941922"
   ["timezone_type"]=>
   int(3)
   ["timezone"]=>

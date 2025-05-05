@@ -1,4 +1,6 @@
 <?php
+require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php';
+
 // Абсолютный путь к корню сайта
 define('DOCUMENT_ROOT', '/var/www');
 
@@ -22,7 +24,7 @@ if (!is_readable($corePath)) {
 // Подключение ядра с обработкой ошибок
 try {
     require_once $corePath;
-    echo "Ядро Bitrix успешно подключено!";
+    \Bitrix\Main\Diag\Debug::dump( "Ядро Bitrix успешно подключено! ");
     
     // Дополнительные проверки
     if (!defined('B_PROLOG_INCLUDED')) {
@@ -30,8 +32,8 @@ try {
     }
     
     // Проверка версии
-    include_once DOCUMENT_ROOT.'/bitrix/modules/main/install/version.php';
-    echo "<br>Версия Bitrix: ".SM_VERSION;
+    
+    \Bitrix\Main\Diag\Debug::dump( " <br>Версия Bitrix: ".SM_VERSION );
     
 } catch (Throwable $e) {
     die("Ошибка при подключении ядра:<br><pre>".htmlspecialchars($e)."</pre>");
@@ -40,7 +42,6 @@ try {
 
 
 //Домашка
-require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php';
 
 $APPLICATION -> setTitle('b24-logs');
 
@@ -49,7 +50,6 @@ $APPLICATION -> setTitle('Пример отладки');
 
 $now = new DateTime();
 
-\Bitrix\Main\Diag\Debug::dumpToFile($now, 'b24-logs.log');
-getSql();
+\Bitrix\Main\Diag\Debug::dumpToFile($now, 'b24-otus-logs.log');
 
 require $_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php';
