@@ -1,8 +1,7 @@
-test.php
 <?php
 // Должно быть самым первым в файле, без пробелов/переносов перед <?php
 ob_start();
-header('Content-Type: text/plain; charset=utf-8');
+//header('Content-Type: text/plain; charset=utf-8');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
@@ -11,7 +10,7 @@ echo "=== MySQL Connection Test ===\n\n";
 $db_host = 'mysql';
 $db_name = 'bitrix';
 $db_user = 'kyberlox';
-$db_pass = '4179'; // Замените на реальный пароль
+$db_pass = '4179';
 
 try {
     $dsn = "mysql:host=$db_host;charset=utf8";
@@ -50,3 +49,8 @@ try {
     }
 }
 ob_end_flush();
+
+$file = '/var/www/bitrix/bitrix/modules/main/include/prolog_before.php';
+echo "File exists: ".(file_exists($file) ? 'YES' : 'NO')."\n";
+echo "Readable: ".(is_readable($file) ? 'YES' : 'NO')."\n";
+echo "Path: ".realpath($file);

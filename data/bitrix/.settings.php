@@ -6,18 +6,20 @@ return [
           'debug' => true, // Включить режим отладки
           'handled_errors_types' => E_ALL & ~E_NOTICE & ~E_SRICT, // Логировать все ошибки
           'exception_errors_types' => E_ALL, // Отображать все ошибки
+          'ignore_silence' => false,
+          'assertion_throws_exception' => true,
+          'assertion_error_type' => 256,
           'log' => [
-              'class_name' => 'Otus\\Diagnostic\\KyberloxLogs',
-              'require_file' => 'OTUS/Diagnostic/KyberloxOtusLogs.php',
+              'class_name' => 'Otus\\Diagnostic\\KyberloxOtusLogs',
+              'require_file' => 'php_interface/classes/Otus/Diagnostic/KyberloxOtusLogs.php',
               'settings' => [
-                  'file' => 'logs/exception.log', // Путь к лог-файлу
+                  'file' => __DIR__ . 'logs/exception.log', // Путь к лог-файлу
                   'log_size' => 1000000, // Размер лог-файла (1MB)
               ],
           ],
       ],
       'readonly' => false,
   ],
-
   'utf_mode' => [
       'value' => true,
       'readonly' => true,
